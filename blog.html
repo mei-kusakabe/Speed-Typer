@@ -91,21 +91,18 @@
                             <div class="accordion-body bg-dark">
                                 <h6 class="text-white">
                                     <ul>
-                                        <li class="fs-5"><b> Arrow function - </b> Arrow functions – a new feature
-                                            introduced in ES6
-                                            – enable writing concise functions in JavaScript. While both regular and
-                                            arrow functions work in a similar manner, yet there are certain interesting
-                                            differences between them, as discussed below.
-                                            Arrow functions behave in the same way as regular functions when returning
-                                            values.
-                                            If the arrow function contains one expression, you can omit the curly
-                                            braces, and then the expression will be implicitly returned.
+                                        <li class="fs-5"><b> Global Scope - </b> The variables defined outside of any
+                                            function or curly brackets are known as global variables and have global
+                                            scope. Global scope means that the variables can be accessed from any part
+                                            of that program, any function or conditional state can access that variable.
                                         </li>
 
-                                        <li class="fs-5"><b> Regular function - </b> In regular function, you have to
-                                            use return
-                                            keyword to return any value. If you don’t return anything then the function
-                                            will return undefined.
+                                        <li class="fs-5"><b> Block Scope -</b> Block scope is also a sub-type of
+                                            local scope. The block scope can be defined as the scope of the variables
+                                            inside the curly brackets <code> {}</code>. Now, these curly brackets can be
+                                            of loops, or
+                                            conditional statements, or something else. You are only allowed to refer to
+                                            these variables from within the curly brackets <code> {}</code>.
                                         </li>
 
                                     </ul>
@@ -124,37 +121,12 @@
                         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                             aria-labelledby="panelsStayOpen-headingThree">
                             <div class="accordion-body bg-dark">
-                                <h6 class="text-white">
-                                    <ul>
-                                        <li class="fs-5"><b>Map and forEach - </b>The main difference between map and
-                                            forEach is that
-                                            the map
-                                            method returns a new array by applying the callback function on each element
-                                            of an array, while the forEach method doesn't return anything.
-                                        </li>
-                                        <li class="fs-5"><b>forEach and filter -</b>The main difference between forEach
-                                            and filter is
-                                            that
-                                            forEach just loop over the
-                                            array
-                                            and executes the callback but filter executes the callback and check its
-                                            return
-                                            value.
-                                        </li>
-                                        <li><b>filter and find -</b> The filter() method is used to filters all the
-                                            elements and
-                                            returns the element that matches and the element that do not match are
-                                            removed. The only difference is the filter() method search through all the
-                                            elements while find() method search through all the child elements only.
-                                        </li>
-                                        <li><b>map and find - </b> map() goes through all entries then creates a new
-                                            array
-                                            using the
-                                            function supplied. . find() locates a specific entry by a predicate and
-                                            returns it.</li>
-                                    </ul>
-
-                                </h6>
+                                <h4 class="text-white">
+                                    The Event Loop has one simple job — to monitor the Call Stack and the Callback
+                                    Queue. If the Call Stack is empty, the Event Loop will take the first event from the
+                                    queue and will push it to the Call Stack, which effectively runs it. Such an
+                                    iteration is called a tick in the Event Loop.
+                                </h4>
                             </div>
                         </div>
                     </div>
@@ -169,28 +141,37 @@
                         <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
                             aria-labelledby="panelsStayOpen-headingFour">
                             <div class="accordion-body bg-dark">
-                                <h6 class="text-white">
-                                    Semantic HTML or semantic markup is HTML that introduces meaning to the web page
-                                    rather than just presentation.
-                                    <br>For example, a <code class="fs-6">p</code> tag indicates that the
-                                    enclosed text is a paragraph. This is both semantic and presentational
-                                    because people know what paragraphs are, and browsers know how to display
-                                    them.
-
-                                    On the flip side of this equation, tags such as <code class="fs-6">b</code> and
-                                    <code class="fs-6">i</code> are not
-                                    semantic. They define only how the text should look (bold or
-                                    italic), and don't provide any additional meaning to the markup.
-
-                                    Examples of semantic HTML tags include:
-
-                                    Header tags <code class="fs-6">h1</code> through <code class="fs-6">h6</code>,
-                                    <code class="fs-6">blockquote</code>,
-                                    <code class="fs-6">code</code>,
-                                    <code class="fs-6">em</code>.
-                                </h6>
-
-
+                                <h4 class="text-white">
+                                    We can get undefined in 8 different ways listing them in the following.
+                                    <ol>
+                                        <li class="fs-5"><b>Uninitialized variable - </b> can give us an
+                                            undefined output.
+                                        </li>
+                                        <li class="fs-5"><b>Functions with no return values - </b> can give us an
+                                            undefined output.
+                                        </li>
+                                        <li class="fs-5"><b>Parameters that is not Passed- </b> can give us an
+                                            undefined output.
+                                        </li>
+                                        <li class="fs-5"><b>If return has nothing on the right side - </b> can give us
+                                            undefined output.
+                                        </li>
+                                        <li class="fs-5 "><b>Property that doesn't exists on an object - </b> can lead
+                                            us to an
+                                            undefined output.
+                                        </li>
+                                        <li class="fs-5"><b>Accesing array elements outside of the index range- </b> can
+                                            give us an
+                                            undefined output.
+                                        </li>
+                                        <li class="fs-5"><b>Deleting an element inside an array - </b> can give us an
+                                            undefined output.
+                                        </li>
+                                        <li class="fs-5"><b>Set a value directly - </b> leads us an
+                                            undefined output.
+                                        </li>
+                                    </ol>
+                                    </h6>
                             </div>
                         </div>
                     </div>

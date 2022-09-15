@@ -148,9 +148,12 @@ button {
 }
 
 #histories {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-around; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
 }
 
 .card {
