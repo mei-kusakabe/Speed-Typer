@@ -153,7 +153,7 @@ button {
   justify-content: space-around; */
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 10px;
+  grid-gap: 12px;
 }
 
 .card {
@@ -195,5 +195,31 @@ button {
 
   .card {
     flex-direction: column;
+  }
+
+  #histories {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
+  }
+}
+
+/* For Mobile devices: 320px-480px. 
+For Tablets or iPad: 480px - 768px.
+ For Laptop or small-size screen: 768px -1024px. 
+ For Desktop or large-size screen: 1024px -1200px. */
+
+@media (min-width: 768px) and (max-width : 1200px) {
+
+  #histories {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
   }
 }
