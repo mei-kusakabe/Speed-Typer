@@ -81,7 +81,7 @@ const gameOver = () => {
   resultModal.innerHTML += `
   <div style="text-align:center">
     <h1>Finished!</h1>
-    <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
+    <p>You took: <span class="bold">${Math.floor(timeTaken)}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
     <button onclick="closeModal()">Close</button>
     <div>
@@ -137,5 +137,5 @@ setInterval(() => {
   const timeSpent = (currentTime - startTime) / 1000;
 
 
-  document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
+  document.getElementById("show-time").innerHTML = `${startTime ? Math.floor(timeSpent) : 0} seconds`;
 }, 1000);
