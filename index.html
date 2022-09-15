@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Speed Monster</title>
-  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
   <!-- bootstrap-css-stylesheet -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- custom-css-stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -24,15 +24,12 @@
         <a class="title px-5 mx-auto" href="./index.html"><img src="./logo.png" alt="logo Picture" /></a>
 
         <li class="nav-item">
-          <a class="nav-link active fs-5 text-white" aria-current="page" href="./blog.html">Blog</a>
+          <a class="nav-link active fs-5 text-white fw-bold" aria-current="page" href="./blog.html">Blog</a>
         </li>
       </div>
     </nav>
   </section>
   <!-- nav-bar section ends -->
-
-
-
 
 
   <div id="show-time">0 seconds</div>
@@ -58,9 +55,17 @@
   <div id="modal-background" class="hidden"></div>
   <div id="result" class="hidden"></div>
 
-  <script src="./history.js"></script>
+  <!-- clear-history part -->
+  <div class="buttons">
+    <button id="clear" class="fs-5">Clear History</button>
+  </div>
+  <!-- clear-history part -->
+
+  <!-- js files -->
+
+  <script src=" ./history.js"></script>
   <script src="./script.js"></script>
-  <!-- <script src="./texts.json"></script> -->
+
 
 </body>
 

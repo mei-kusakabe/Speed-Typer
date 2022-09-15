@@ -1,6 +1,7 @@
 const display = document.getElementById("display");
 const question = document.getElementById("question");
 const startBtn = document.getElementById("start");
+const clearBtn = document.getElementById("clear");
 const countdownOverlay = document.getElementById("countdown");
 const resultModal = document.getElementById("result");
 const modalBackground = document.getElementById("modal-background");
@@ -105,7 +106,9 @@ const closeModal = () => {
   resultModal.classList.toggle("hidden");
 };
 
+
 const start = () => {
+
   // If already started, do not start again
   if (startTime) return;
 
@@ -126,6 +129,7 @@ const start = () => {
       startTime = new Date().getTime();
     }
     count--;
+
   }, 1000);
 };
 
@@ -143,4 +147,11 @@ setInterval(() => {
 
   document.getElementById("show-time").innerHTML = `${startTime ? Math.floor(timeSpent) : 0} seconds`;
 }, 1000);
-//localStorage.clear();
+
+
+
+const clear = () => {
+  localStorage.clear();
+};
+clearBtn.addEventListener("click", clear);
+
