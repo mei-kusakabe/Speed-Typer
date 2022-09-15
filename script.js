@@ -68,6 +68,7 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = (finishTime - startTime) / 1000;
+  const finalTimeTaken = Math.floor(timeTaken);
 
   // show result modal
   resultModal.innerHTML = "";
@@ -81,13 +82,13 @@ const gameOver = () => {
   resultModal.innerHTML += `
   <div style="text-align:center">
     <h1>Finished!</h1>
-    <p>You took: <span class="bold">${Math.floor(timeTaken)}</span> seconds</p>
+    <p>You took: <span class="bold">${finalTimeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
     <button onclick="closeModal()">Close</button>
     <div>
   `;
 
-  addHistory(questionText, timeTaken, errorCount);
+  addHistory(questionText, finalTimeTaken, errorCount);
 
   // restart everything
   startTime = null;
@@ -139,3 +140,4 @@ setInterval(() => {
 
   document.getElementById("show-time").innerHTML = `${startTime ? Math.floor(timeSpent) : 0} seconds`;
 }, 1000);
+//localStorage.clear();
